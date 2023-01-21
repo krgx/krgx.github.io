@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/f2d6355b10.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-text">
+        <h1 class="header-title">MySiTE</h1>
+      </div>
+      <nav class="nav">
+        <ul class="nav-item">
+          <li><a href="index.html" class="nav-link">Главная</a></li>
+          <li><a href="trainerjs.html" class="nav-link">ТСП</a></li>
+          <li><a href="calc.html" class="nav-link">Калькулятор</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="calc">
+      <p class="num"><label class="num" for="n1">Число 1</label><input class = "num__input" type="text" onclick="num1" id="n1" /></p>
+      <p class="num"><label class="num" for="n2">Число 2</label><input class = "num__input" type="text" onclick="num2" id="n2" /></p>
+      <button class = "calc__btn" onclick="plus()">+</button>
+      <button class = "calc__btn" onclick="minus()">-</button>
+      <button class = "calc__btn" onclick="multiplication()">*</button>
+      <button class = "calc__btn" onclick="division()">/</button>
+      <button class = "calc__btn" onclick="sqrt()">√</button>
+      <button class = "calc__btn" onclick="pow()">^</button>
+
+      <p class="res">Результат:
+        <span id="out"></span>
+      </p>
+    </div>
+  </body>
+  <script src="js/calc.js"></script>
+</html>

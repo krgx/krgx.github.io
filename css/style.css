@@ -1,0 +1,249 @@
+/**,*/
+/**:before,*/
+/**:after {*/
+/*  box-sizing: border-box;*/
+/*  padding: 0;*/
+/*  margin: 0;*/
+/*}*/
+
+body,
+html {
+    /*width: 100%;*/
+    margin: 0;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+}
+button {
+    outline: none !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.header {
+    margin: auto;
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #3f92d2;
+    position: sticky;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    /*padding-left: 1rem;*/
+    /*padding-right: 1rem;*/
+    margin: 0 auto;
+    height: 52rem;
+}
+
+.header-title {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    color: #fff;
+    /*padding: 1rem 1.2rem;*/
+}
+
+.nav {
+    /*margin-top: 0.5rem;*/
+    display: flex;
+    align-items: center;
+    /*vertical-align: bottom;*/
+}
+
+.nav-item {
+    /*overflow: hidden;*/
+    padding: 0;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    border: none !important;
+}
+
+.nav-link {
+    /*display: block;*/
+    padding: 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #3592da;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    border-bottom: solid #1f69a1;
+    background-color: #2e86ca;
+}
+
+.nav-link:hover .header{
+    padding-bottom: calc(1rem);
+}
+
+
+.intro {
+    display: flex;
+    /*width: 100%;*/
+    /*padding: 1rem;*/
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.intro__inner {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 120px;
+    position: relative;
+}
+
+.intro-content {
+    width: 50%;
+    text-align: center;
+    /*vertical-align: middle;*/
+}
+
+.intro-img {
+    position: absolute;
+    right: 0;
+}
+
+.intro-text {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.1rem 1.8rem;
+    min-width: 170px;
+    border: 1.8px solid #60ace6;
+    border-radius: 30px;
+    background: none;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 1.06rem;
+    line-height: 1.1;
+    color: #60ace6;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    box-shadow: 0 0.45rem 0.8rem rgba(41, 138, 182, 0.5), 0 0.226rem 0.425rem rgba(51, 97, 187, 0.5);;
+
+}
+
+.btn:hover {
+    background-color: #60ace6;
+    color: #fff;
+}
+
+.footer__social {
+    display: flex;
+}
+
+.footer__p {
+    margin-bottom: 0;
+}
+
+.footer__inner {
+    background-color: #17507c;
+    padding: 1rem;
+}
+
+.footer__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer__img {
+    padding-left: .6rem;
+    width: 24px;
+    height: 24px;
+}
+
+.footer__img:hover {
+    color: white;
+
+}
+
+.svg-icon path{
+    fill: white;
+}
+
+.scrollup {
+    position: fixed; /* фиксированная позиция */
+    color: #fff; /* цвет текста */
+    background-color: #286090; /* цвет заднего фона */
+    right: 20px; /* расстояние от правого края */
+    bottom: 5px; /* расстояние от нижнего края */
+    padding: 4px 10px; /* отступы до содержимого блока */
+    font-size: 20px; /* размер шрифта (иконки) */
+    border-radius: .5rem; /* скругление верхнего правого угла */
+    cursor: pointer; /* форма курсора */
+    display: none; /* не отображать элемент */
+    text-align: center; /*выравнивание содержимого элемента по центру */
+}
+
+.scrollup:hover {
+    background-color: #3580c2;
+}
+
+
+.calc {
+    border: #1f69a1 2px solid;
+    font-weight: 600;
+    color: #2e86ca;
+    width: 20%;
+    margin: 2rem auto;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0.45rem 0.8rem rgba(41, 138, 182, 0.5), 0 0.226rem 0.425rem rgba(51, 97, 187, 0.5);;
+}
+
+p.num {
+    font-size: 1rem;
+}
+
+.num__input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    height: 1rem;
+    width: 8rem;
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.calc__btn {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #1f69a1;
+    padding: .3rem .5rem;
+    background: none;
+    cursor: pointer;
+    margin: .5rem;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+.calc__btn:hover {
+    background-color: rgba(63, 146, 210, 0.61);
+    transform: scale(1.2);
+    color: white;
+}
+
+.res {
+    margin-top: .5rem;
+    font-weight: 700;
+    color: #08a13f;
+}
